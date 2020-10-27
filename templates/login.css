@@ -1,0 +1,72 @@
+header{
+  background-color:#2E0E07;
+	height: 100vh;
+	background-size: cover;
+	background-position: center;
+}
+#frm{
+	border:solid gray 1px;
+	width:20px;
+	border-radius:5px;
+	margin: 100px auto;
+	background:white;
+}
+#btn{
+
+	color:blue;
+	background:white;
+	padding:5px;
+	margin left:69%;
+}
+.form-container{
+	width: 250px;
+	height: auto;
+	padding: 20px 30px;
+	background-color:white;
+	border-radius: 10px;
+	box-shadow: 0 0 10px 0 #000;
+	margin: auto;
+	position: relative;
+}
+.user-img{
+	background-image: url('login1.png') no-repeat;
+width: 70px;
+height: 70px;
+background-size:100;
+position: absolute;
+top: -40;
+left: 100;
+}
+ul.list{
+	list-style-type:none;
+	text-align: center;
+}
+ul.list li{
+width: 250px;
+margin-bottom: 10px;
+}
+ul.list li input{
+	width: 250px;
+	text-align: center;
+	padding: 8px 0px;
+	border: none;
+	background-color:silver;
+	border-radius: 5px;
+
+}
+ul.list li input[type="button"]{
+	background-color: blue;
+	color: white;
+	border-radius: 5px;
+}
+ul.list li:nth-child(5){
+	color: red;
+}
+.img{
+	background-image: url('login1.png') no-repeat;
+width: 70px;
+height: 70px;
+background-size:100;
+}
+
+}

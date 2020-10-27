@@ -1,0 +1,257 @@
+
+
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+  <h2>Login</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Login</button>
+  </form>
+{% endblock %}
+
+<html>
+<head>
+<meta charset="utf-8">
+<title>login</title>
+<link href="login.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<!--<link href="login.php" rel="stylesheet" type="text/css">
+
+	<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+-->
+</head>
+
+<body>
+	<header>
+
+<style type="text/css">
+		.box{
+			background-color:black;
+			/*background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("nap1.jpg");*/
+			margin: 10px;
+			shape-margin: 10px;
+			width: 100%
+		}
+		.navbar-toggler-icon{
+        background-color:silver;
+		}
+	</style>
+
+<style type="text/css">
+	.dropdown-menu{
+		background-color: #2E0E07;
+	}
+  header{
+		background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("login111.jpg");
+
+  	height: 150%;
+  	background-size: cover;
+  	background-position: center;
+  }
+  #frm{
+  	border:solid gray 1px;
+  	width:20px;
+  	border-radius:5px;
+  	margin: 100px auto;
+  	background:white;
+  }
+  #btn{
+
+  	color:blue;
+  	background:white;
+  	padding:5px;
+  	margin left:69%;
+  }
+  .form-container{
+		background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)) ,url("log.jpg");
+		width: 350px;
+	  height: 350px;
+	  padding: 20px 30px;
+	  background-color:;
+	  top:10%;
+	  bottom: 30%;
+
+	  border-radius: 10px;
+	  box-shadow: 0 0 10px 0 #000;
+	  margin: auto;
+	  position: relative;
+  }
+  .user-img{
+  	background-image: url('login1.png') no-repeat;
+  width: 70px;
+  height: 70px;
+  background-size:100;
+  position: absolute;
+  top: -40;
+  left: 100;
+  }
+  ul.list{
+  	list-style-type:none;
+  	text-align: center;
+  }
+  ul.list li{
+  width: 250px;
+  margin-bottom: 10px;
+  }
+  ul.list li input{
+  	width: 250px;
+  	text-align: center;
+  	padding: 8px 0px;
+  	border: none;
+  	background-color:silver;
+  	border-radius: 5px;
+
+  }
+  ul.list li input[type="button"]{
+  	background-color: blue;
+  	color: white;
+  	border-radius: 5px;
+  }
+  ul.list li:nth-child(5){
+  	color: red;
+  }
+  .img{
+  	background-image: url('login1.png') no-repeat;
+  width: 70px;
+  height: 70px;
+  background-size:100;
+  }
+
+  }
+
+</style>
+
+
+
+<nav class="navbar navbar-light ">
+        <div class="container">
+        	<input type="image" id="image" alt="baby"
+       src="dressio.jpg" style="width: 10%"> <a href="about.html"></a>
+            <a class="navbar-brand" href="about.html"><font color="silver">Dressio</font></a>
+            <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+ <a class="nav-link" href="home.html"><font color="silver">Home</font></a>
+                <a class="nav-link" href="gallery.html"><font color="silver">Gallery</font></a>
+                 <a class="nav-link" href="cart.html"><font color="silver">Cart</font></a>
+             <a class="nav-link" href="login.html"><font color="silver">Log in</font></a>
+                <a class="nav-link" href="sign up.html"><font color="silver">Sign Up</font></a>
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav"><div class="mili"><span class="navbar-toggler-icon"></span></div></button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="home.html"><font color="silver">Home</font></a></li>
+                    <li class="nav-item"><a class="nav-link" href="gallery.html"><font color="silver">Gallery</font></a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart.html"><font color="silver">Cart</font></a></li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><font color="silver">Category</font></a>
+                        <div class="dropdown-menu">
+                            <a href="saree.html"class="dropdown-item"><font color="silver">Saree</font></a>
+                            <a href="panjabee.html"class="dropdown-item"><font color="silver">Panjabee</font></a>
+                            <a href="groun.html"class="dropdown-item"><font color="silver">Grown</font></a>
+                            <a href="borka.html"class="dropdown-item"><font color="silver">borka</font></a>
+                            <a href="baby.html"class="dropdown-item"><font color="silver">Baby clothes</font></a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#"><font color="silver">Gender</font></a>
+                        <div class="dropdown-menu">
+                            <a href="girls.html" class="dropdown-item"><font color="silver">Female</font></a>
+                            <a href="boys.html" class="dropdown-item"><font color="silver">Male</font></a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="discount,html"><font color="silver">Discount</font></a></li>
+                 <li class="nav-item"><a class="nav-link" href="about.html"><font color="silver">About Us</font></a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html"><font color="silver">Contact Us</font></a></li>
+                    <li class="nav-item"><a class="nav-link" href="login.html"><font color="silver">Log in</font></a></li>
+                    <li class="nav-item"><a class="nav-link" href="sign up ,html"><font color="silver">Sign Up</font></a></li>
+
+
+                </ul>
+            </div>
+        </div>
+
+
+
+    </nav>
+
+
+
+
+
+
+
+
+		<div class="main">
+			<div class="logo">
+
+			</div>
+		</div>
+
+
+		<div class="form-container">
+		<!--<div class="user-img" >
+				<div  align="left"><img src="log.jpg" width="100%"></div>
+
+		</div>-->
+		<!--<form action="login.php" method="="POST>-->
+	<ul class="list">
+		<li><font color="white">Please Log In</font></li>
+
+		<li>
+
+	<!--	<div class="user-img1" >
+				<div  align="left"><img src="person.jpg" width="100%"></div>
+
+		</div>-->
+
+			<input type="text" id="username" name="username" placeholder="Username"></li>
+		<li>
+        <!--  <div class="user-img2" >
+				<div  align="left"><img src="key2.jpg" width="100%"></div>
+
+		</div>-->
+			<input type="password" id="password" name="password" placeholder="Password"></li>
+		<li><font color="white">Your Password will keep secure</font></li>
+		<li><a href="forget.html"><font color="indianred">forget password??</font></a></li>
+		<li><font color="white">Don`t have an account</font>
+		<a href="sign up.html">sign up??</a></li>
+		<li><a href="homepage.html" class="btn btn-success ">Login</a></li>
+	</ul>
+	</div>
+
+
+
+
+
+	<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	</header>
+	<style type="text/css">
+		.copyright{
+       background-color:black;
+		}
+
+
+	</style>
+	<div class="copyright">
+		<center><h3><b><font color="pink">Dressio</font></b></h3></center>
+<center><font color="white">Copyright@2020</font></center>
+<center><font color="white">Designed by: </font><font color="orange">Rabeya</font></center>
+<center><a href="contact.html"><font color="purple">Contact Us</font></a></center>
+	</div>
+</body>
+</html>
